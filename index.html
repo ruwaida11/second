@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!--start your doc by putting an exclamation mark-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruwaida's Website</title> <!--name of website but need to figure out how to change the name of the link-->
+    <link rel="stylesheet" href="index.css"> <!--use this line to link ur css to the html to change visiual aspects of code w/o using html-->
+    <link rel="stylesheet" href="index3.html">
+</head>
+<body><!--body is where basically everything youll see in the website goes-->
+ <h1> Welcome! </h1>   <!--main heading of the website-->
+ <p> <i><b>Take your time <br> answering some questions:)</b></i> </p>
+ <img src="smiley.jpg" alt="smiling face" width="104" height="104"><br>
+ <!--how to link a website, i made a second page to send someone to when they submit their info. the target _blank makes it open a new window-->
+ <a href = "https://www.w3schools.com/html/html_basic.asp" target= "_blank"> This link takes you to a coding tutorial website</a>
+ 
+ <!--started creating lists-->
+ <!--unordered list just mkes bullet points-->
+<p><b>you can display your lists like this:</b></p>
+ <ul>
+    <li>apple</li>
+    <li>orange</li>
+    <li>grapes</li>
+    <li>pineapple</li>
+ </ul>
+<p><b>or like this:</b></p>
+ <ol><!--ol stands for ordered puts 1. 2. 3. etc-->
+    <li>apple</li>     <!--have to put li before and after each item in a list-->
+    <li>orange</li>
+    <li>grapes</li>
+    <li>pineapple</li>
+ </ol>
+
+ <!--for= and id= always need to be the same-->
+
+ <!--this is a text form so person actually types their info in-->
+ <p><b> please enter your details</b></p>
+ <form action="http://127.0.0.1:5500/index2.html"target="_self"> <!--might change to _self if i make a button that clicks back to same page-->
+<label for="fn">Full Name:</label><br>
+<input type="text" id="fn" name="fullname:"><br>
+<label for="dob">Date of Birth:</label><br>
+<input type="text" id="dob" name="dateofbirth"><br>
+<input type="submit" value="submit">
+ </form>
+
+ <!--this is a radio form so person can select ONE option only-->
+<p> Hello! what is your favourite colour? <sub>select one only :)</sub></p>
+<form> 
+<input type="radio" id="Red" name="fc"> 
+<label for="Red">Red</label><br>
+<input type="radio" id="Blue" name="fc">
+<label for="Blue">Blue</label><br>
+<input type="radio" id="Green" name="fc">
+<label for="Green">Green</label>
+</form>
+
+<!--checkbox form, person can select multiple answers-->
+<p>Which fruits do you like? <sub>select one or more</sub></p> 
+<form>
+<input type="checkbox" id="fruit1" name="fruit1" value="Apples">
+<label for="fruit1">I like apples</label><br>
+<input type="checkbox" id="fruit2" name="fruit2" value="Oranges">
+<label for="fruit2">I like oranges</label><br>
+<input type="checkbox" id="fruit3" name="fruit3" value="Pineapples">
+<label for="fruit3">I like pineapples</label>
+</form>
+<br>
+<br>
+<!--this is how to make links that go to different parts of your website. using _self doesnt open another tab just opens it directly-->
+<form action="http://127.0.0.1:5500/index3.html"target="_self">
+<input type=submit value="click here when finished:)">
+</form>
+
+
+
+</body> 
+</html>
